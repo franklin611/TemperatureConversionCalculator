@@ -49,15 +49,16 @@ import javafx.scene.control.*;
             if (selectedInput == 0 && selectedOutput == 0) {
                 outputField.setText("Answer: " + inputText + " °C"); //C, F, K, R
             } else if (selectedInput == 0 && selectedOutput == 1) {
-                outputField.setText("Answer: " + String.format("%.4f", (x - 32) * (9 / 5))+ " °F");
+                outputField.setText("Answer: " + String.format("%.4f", (x - 32) * 9 / 5)+ " °F");
             } else if (selectedInput == 0 && selectedOutput == 2) {
                 outputField.setText("Answer: " + String.format("%.4f", (x +273.15))+ " K");
             } else if (selectedInput == 0 && selectedOutput == 3) {
-                outputField.setText("Answer: " + String.format("%.4f", (x * (9/5) + 491.67))+ " °R");
+                outputField.setText("Answer: " + String.format("%.4f", (x * 9/5 + 491.67))+ " °R");
 
 
             } else if (selectedInput == 1 && selectedOutput == 0) {
-                outputField.setText("Answer: " + String.format("%.4f", (x - 32) * (5 / 9)) +  " °C");
+               outputField.setText("Answer: " + String.format("%.4f", (x - 32) * 5 / 9) +  " °C");
+
             } else if (selectedInput == 1 && selectedOutput == 1) {
                 outputField.setText("Answer: " + inputText + " °F");
             } else if (selectedInput == 1 && selectedOutput == 2) {
@@ -69,19 +70,19 @@ import javafx.scene.control.*;
             } else if (selectedInput == 2 && selectedOutput == 0) {
                 outputField.setText("Answer: " + String.format("%.4f", (x - 273.15)) + " °C" );
             } else if (selectedInput == 2 && selectedOutput == 1) {
-                outputField.setText("Answer: " + String.format("%.4f", ((x * (9/5)) + 459.67)) + " °F");
+                outputField.setText("Answer: " + String.format("%.4f", ((x * 9/5) + 459.67)) + " °F");
             } else if (selectedInput == 2 && selectedOutput == 2) {
                 outputField.setText("Answer: " + inputText + " K");
             } else if (selectedInput == 2 && selectedOutput == 3) {
-                outputField.setText("Answer: " +  String.format("%.4f", (x * (9/5))) + " °R");
+                outputField.setText("Answer: " +  String.format("%.4f", (x * 9/5)) + " °R");
 
 
             } else if (selectedInput == 3 && selectedOutput == 0) {
-                outputField.setText("Answer: " + String.format("%.4f", ((x * (5/9)) - 273.15)) + " °C");
+                outputField.setText("Answer: " + String.format("%.4f", ((x * 5/9) - 273.15)) + " °C");
             } else if (selectedInput == 3 && selectedOutput == 1) {
                 outputField.setText("Answer: " + String.format("%.4f", x - 459.67) + " °F");
             } else if (selectedInput == 3 && selectedOutput == 2) {
-                outputField.setText("Answer: " + String.format("%.4f", (x  * (5 / 9))) + " K");
+                outputField.setText("Answer: " + String.format("%.4f", (x  * 5 / 9)) + " K");
             } else if (selectedInput == 3 && selectedOutput == 3) {
                 outputField.setText("Answer: " + inputText + " °R");
 
